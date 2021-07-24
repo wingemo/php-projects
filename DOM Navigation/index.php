@@ -4,15 +4,15 @@ $dom = new DomDocument;
 $dom->preserveWhiteSpace = false;
 $dom->load($file);
 $people = $dom->getElementsByTagName('newspaper');
-
-
+$output = array();
 
 foreach ($people as $person)
 {
+    $data = array();
     $attributes = $person->attributes;
     foreach ($attributes as $index => $attr)
     {
-        echo $attr->value;
+        array_push($data, $attr->value);
     }
     foreach ($person->childNodes as $article)
     {
@@ -23,14 +23,18 @@ foreach ($people as $person)
             {
                 foreach ($text->childNodes as $heading)
                 {
-                    echo $text->nodeValue;
+                    array_push($data, $text->nodeValue);
                 }
             }
             elseif ($text->tagName == "story")
             {
-                echo $text->nodeValue;
+                array_push($data, $text->nodeValue);
             }
         }
     }
+     array_push($output, $data);
 }
+
+print(json_encode($output));
+
 ?>
