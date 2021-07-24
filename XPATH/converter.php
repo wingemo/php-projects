@@ -46,3 +46,4 @@ foreach ($newspaper_attributes as $newspaper)
     }
 
 }
+?>
