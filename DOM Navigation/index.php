@@ -5,6 +5,8 @@ $dom->preserveWhiteSpace = false;
 $dom->load($file);
 $people = $dom->getElementsByTagName('newspaper');
 
+
+
 foreach ($people as $person)
 {
     $attributes = $person->attributes;
@@ -30,6 +32,5 @@ foreach ($people as $person)
             }
         }
     }
-    echo "</div>";
 }
 ?>
