@@ -3,10 +3,10 @@ $file = 'example2_2018.xml';
 $dom = new DomDocument;
 $dom->preserveWhiteSpace = false;
 $dom->load($file);
-$people = $dom->getElementsByTagName('newspaper');
+$newspapers = $dom->getElementsByTagName('newspaper');
 $output = array();
 
-foreach ($people as $person)
+foreach ($newspapers as $newspaper)
 {
     $data = array();
     $attributes = $person->attributes;
