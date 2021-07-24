@@ -40,7 +40,7 @@ foreach ($newspaper_attributes as $newspaper)
         $article_story = $article_nodeValue->query($xpathString);
         foreach ($article_story as $story)
         {
-
+            echo $story->nodeValue;
         }
 
     }
