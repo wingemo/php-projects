@@ -32,7 +32,7 @@ foreach ($people as $person)
             }
         }
     }
-     array_push($output, $data);
+    array_push($output, $data);
 }
 
 print(json_encode($output));
