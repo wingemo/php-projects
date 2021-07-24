@@ -1,1 +1,95 @@
-
+<?xml version='1.0' encoding='us-ascii'?>
+<!DOCTYPE newspapers SYSTEM "example1b.dtd">
+<newspapers>
+<newspaper name="Times" subscribers="100.000" type="Morning Edition">
+	<article id="1232" time="2001-01-01">
+		<heading>
+			<text>This and that</text>
+		</heading>
+		<story>
+			<text>This and that happened during the day and all were amazed.</text>
+		</story>
+	</article>
+	<article id="1595" description="Review">
+		<heading>
+			<text>Another Great Happening</text>
+		</heading>
+		<story>
+            <text>Another Happening!</text>
+		</story>
+		<comment description="Review" />
+	</article>
+	<article id="1692" time="2001-01-02">
+		<heading>
+			<text>Mother Goose Seen Again</text>
+		</heading>
+		<story>
+			<text>Very interesting information about childrens book character.</text>
+		</story>
+	</article>
+</newspaper>
+<newspaper name="News of The World" subscribers="800.000" type="Evening Edition">
+	<article id="1832" time="2001-01-01" description="Review">
+		<heading>
+			<text>Horrible Happenings</text>
+		</heading>
+		<story>
+			<text>This and that happened during the evening and all were apalled.</text>
+		</story>
+		<comment description="Review" />
+	</article>
+	<article id="1895" description="News">
+		<heading>
+			<text>Another Great Happening</text>
+		</heading>
+		<story>
+			<text>Another Happening!</text>
+		</story>
+		<comment description="News" />
+	</article>
+	<article id="1892" time="2001-01-02">
+		<heading>
+			<text>Mother Goose Sadly Not Seen Again</text>
+		</heading>
+		<story>
+			<text>Childrens book character snuffed out by maffia.</text>
+		</story>
+	</article>
+</newspaper>
+<newspaper name="The SUN" subscribers="300.000" type="Evening Edition">
+	<article id="1882" time="2011-01-01" description="News">
+		<heading>
+			<text>All is Well</text>
+		</heading>
+		<story>
+			<text>Events unfolded and things happened.</text>
+		</story>
+		<comment description="News" />
+	</article>
+	<article id="1883" description="Review">
+		<heading>
+			<text>Even More Things</text>
+		</heading>
+		<story>
+			<text>Unjust musements.</text>
+		</story>
+		<comment description="Review" />
+	</article>
+	<article id="1884" time="2001-01-02">
+		<heading>
+			<text>Mother Goose Lost In Battle</text>
+		</heading>
+		<story>
+			<text>Childrens book character still missing.</text>
+		</story>
+	</article>
+</newspaper>
+<article id="1984" time="2018-01-02">
+  <heading>
+    <text>Mother Ship Lost In Battle</text>
+  </heading>
+  <story>
+    <text>Space invaders ate my homework.</text>
+  </story>
+</article>
+</newspapers>
