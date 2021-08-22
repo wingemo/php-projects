@@ -1,7 +1,5 @@
 <?php
 
-
-
 foreach ($arr as &$value) {
     // List all accounts and sum togheter
     function accounts_sum() {
