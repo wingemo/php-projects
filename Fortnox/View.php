@@ -1,5 +1,7 @@
 <?php
 
+$token = "token_api_oauth"; //https://portal.smsapi.se/react/oauth/manage
+
 function sms_send($params, $token, $message)
 {
 
@@ -26,8 +28,6 @@ function sms_send($params, $token, $message)
     curl_close($c);
     return $content;
 }
-
-$token = "token_api_oauth"; //https://portal.smsapi.se/react/oauth/manage
 
 $params = array(
     'to'            => '4412334445566',         //destination number
