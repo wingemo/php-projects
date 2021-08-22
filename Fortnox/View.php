@@ -1,12 +1,19 @@
 <?php
 
-$token = "token_api_oauth"; //https://portal.smsapi.se/react/oauth/manage
+$token = "token_api_oauth";
 
 function sms_send($params, $token, $message)
 {
 
     static $content;
-
+    
+    $params = array(
+        'to'            => '4412334445566',         //destination number
+        'from'          => 'Test',                  //sendername 
+        'message'       => 'content of message',    //message content
+        'format'        => 'json',
+    );
+    
     $url = 'https://api.smsapi.se/sms.do';
 
     $c = curl_init();
@@ -28,12 +35,4 @@ function sms_send($params, $token, $message)
     curl_close($c);
     return $content;
 }
-
-$params = array(
-    'to'            => '4412334445566',         //destination number
-    'from'          => 'Test',                  //sendername made in https://portal.smsapi.se/sms_settings/sendernames
-    'message'       => 'content of message',    //message content
-    'format'        => 'json',
-);
-
 ?>
