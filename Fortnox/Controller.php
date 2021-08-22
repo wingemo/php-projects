@@ -12,9 +12,8 @@ function orders_sum() {
   return $orders;
 }
 
+// Send outgoing SMS message
 foreach ($arr as &$value) {
-
-    // Send outgoing SMS message
     $message = accounts_sum(). orders_sum();
     sms_send($message);
 }
